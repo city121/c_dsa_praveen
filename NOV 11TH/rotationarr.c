@@ -1,16 +1,21 @@
 #include<stdio.h>
 int main(){
-    int a,n;
+    int n;
     printf("enter the size: ");
-    scanf("%d",&a);
+    scanf("%d",&n);
     int arr[n];
-    printf("Array elements are: ");
         for(int i=0;i<n;i++){
             scanf("%d",&arr[i]);
+        }int k;
+        scanf("%d",&k);
+        for(int j=0;j<k;j++){
+            int ptr=arr[n-1];
+        for(int i=n-1;i>0;i--){
+            arr[i]=arr[i-1];
         }
-        int ptr=arr[n-1];
-        for(int i=0;i<n-1;i++){             
-        
-        }
-    
+        arr[0]=ptr;
+     }
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
 }
